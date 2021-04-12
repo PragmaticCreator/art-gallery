@@ -41,7 +41,7 @@ export default {
   &__title {
     text-align: center;
     span {
-      font-size: 2.125rem;
+      font-size: 2rem;
     }
     margin-bottom: 30px;
   }
@@ -59,25 +59,32 @@ export default {
       align-items: center;
       justify-content: center;
       margin: 0 20px;
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 20px 0;
+      h1 {
+        font-size: 2.5rem;
       }
-
-      h4 {
-        font-size: 1.25rem;
+      h2 {
+        font-size: 2rem;
       }
       h3 {
+        font-size: 1.75rem;
+      }
+      h4 {
         font-size: 1.5rem;
+      }
+      h5 {
+        font-size: 1.25rem;
+      }
+      h6 {
+        font-size: 1rem;
+      }
+
+      h1,h2,h3,h4,h5,h6 {
+        margin: 20px 0;
       }
 
       p {
         color: $secondaryColor;
-        font-size: 1.1875rem;
+        font-size: 1.125rem;
         margin-bottom: 30px;
       }
 
@@ -93,8 +100,9 @@ export default {
       }
 
       img {
-        width: 500px;
-        height: 500px;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
         object-fit: fill;
         margin-bottom: 30px;
         border-radius: 5px;

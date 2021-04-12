@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 .articles {
-  font-family: 'Montserrat';
+  font-family: $fontAccent;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -73,20 +73,21 @@ export default {
     object-fit: fill;
     margin-bottom: 15px;
     height: 350px;
-    width: 600px;
-    margin-left: auto;
+    width: 100%;
+    max-width: 600px;
     margin-right: auto;
+    margin-left: auto;
     border-radius: 5px;
     cursor: pointer;
   }
 
-  &__title { 
+  &__title {
     font-size: 1.75rem;
     cursor: pointer;
   }
 
   &__date {
-    font-size: 0.875;
+    font-size: 1rem;
     margin-top: 15px;
   }
 }

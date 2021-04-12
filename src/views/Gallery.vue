@@ -79,7 +79,7 @@ export default {
   &__view {
     &-enter-active,
     &-leave-active {
-      transition: opacity 500ms;
+      transition: opacity 500ms ease-in-out;
     }
 
     &-enter,
@@ -104,24 +104,26 @@ export default {
       bottom: 0;
       left: 0;
       right: 0;
-      height: 90vh;
-      width: 90vh;
+      height: 80%;
+      width: 80%;
       margin: auto;
     }
   }
 
   &__posts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     justify-items: center;
     text-align: center;
     row-gap: 50px;
+    column-gap: 30px;
 
     &-content {
       img {
         display: block;
-        height: 350px;
-        width: 280px;
+        height: 380px;
+        width: 100%;
+        max-width: 280px;
         object-fit: fill;
 
         border: 2px solid $borderColor;
@@ -136,7 +138,7 @@ export default {
       }
 
       span {
-        font-family: 'Montserrat';
+        font-family: $fontAccent;
         font-size: 1rem;
         font-weight: 600;
       }

@@ -7,7 +7,7 @@
         their specific needs.
       </p>
       <img
-        class="services__image-right"
+        class="services__js-right"
         src="@/assets/images/noMasks.jpg"
         alt="Tailored artwork"
       />
@@ -25,7 +25,7 @@
         their creativity.
       </p>
       <img
-        class="services__image-right"
+        class="services__js-right"
         src="@/assets/images/ameliaBrown.jpg"
         alt="Art by Amelia Brown"
       />
@@ -46,13 +46,14 @@ export default {};
 
 <style lang="scss" scoped>
 .services {
-  font-family: 'Montserrat';
+  font-family: $fontAccent;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0 90px;
-  row-gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  margin: 0 50px;
+  row-gap: 50px;
+  column-gap: 30px;
 
-  &__image-right {
+  &__js-right {
     justify-self: right;
   }
 
@@ -64,8 +65,9 @@ export default {};
   img {
     border-radius: 5px;
     object-fit: fill;
-    height: 450px;
-    width: 400px;
+    height: 380px;
+    width: 100%;
+    max-width: 280px;
   }
 }
 </style>

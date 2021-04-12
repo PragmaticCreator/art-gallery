@@ -91,23 +91,34 @@ export default {};
 <style lang="scss" scoped>
 .faq {
   &__title {
-    font-size: 2.625rem;
+    font-size: 2.375rem;
     text-align: center;
   }
 
   article {
     border: 0.5px solid $borderColor;
+    border-left: 0;
     margin: 50px 0;
 
     div {
+      position: relative;
       display: flex;
       align-items: center;
       font-size: 1.375rem;
-      font-weight: 500;
       border-bottom: 0.5px solid $borderColor;
       padding: 20px 10px;
       background-color: $secondaryColor;
       color: $primaryColor;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-color: $tertiaryColor;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+      }
 
       & > span {
         color: $tertiaryColor;
@@ -115,40 +126,31 @@ export default {};
         font-size: 2rem;
         font-weight: bold;
         margin-right: 10px;
-
-        &::before {
-          position: absolute;
-          content: '';
-          background-color: $tertiaryColor;
-          top: -21px;
-          left: -11px;
-          width: 4px;
-          height: 85px;
-        }
       }
     }
 
     p {
+      position: relative;
       display: flex;
       align-items: center;
       font-size: 1.0625rem;
       padding: 20px 10px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-color: $secondaryColor;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+      }
+
       & > span {
         color: $secondaryColor;
-        position: relative;
         font-size: 2rem;
         font-weight: bold;
         margin-right: 10px;
-
-        &::before {
-          position: absolute;
-          content: '';
-          background-color: $secondaryColor;       
-          top: -20px;
-          left: -11px;
-          width: 4px;
-          height: 84px;
-        }
       }
     }
   }

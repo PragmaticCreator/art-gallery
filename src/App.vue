@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <!-- Website title -->
-    <Header />
-    <!-- Side Navigation -->
-    <Dashboard /> 
-    <!-- Mobile display -->
-    <!-- <router-view class="page-layout" /> -->
+    <Header :isMobile="isMobile" />
+    <!-- Desktop View -->
+    <Dashboard v-if="!isMobile" />
+    <!-- Mobile View -->
+    <MobileView v-else />
     <!-- Footer -->
     <Footer />
   </div>
@@ -13,7 +13,8 @@
 
 <script>
 import Header from './components/Header';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/DesktopView';
+import MobileView from './components/MobileView';
 import Footer from './components/Footer';
 
 export default {
@@ -21,7 +22,25 @@ export default {
   components: {
     Header,
     Dashboard,
+    MobileView,
     Footer,
+  },
+  data() {
+    return {
+      isMobile: false,
+    };
+  },
+  created() {
+    window.addEventListener('resize', this.onResize);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.onResize);
+  },
+  methods: {
+    onResize() {
+      let screenWidth = screen.width;
+      screenWidth <= 576 ? (this.isMobile = true) : (this.isMobile = false);
+    },
   },
 };
 </script>
@@ -32,6 +51,7 @@ export default {
 html {
   box-sizing: border-box;
   font-size: 100%;
+  line-height: 1.5;
 }
 
 *,
@@ -44,11 +64,30 @@ html {
 }
 
 #app {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: $fontPrimary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
   background-color: $primaryColor;
-  color: $fontColor;  
+  color: $fontColor;
   overflow: hidden;
+}
+
+@include for-phones {
+  html {
+    font-size: 0.75rem;
+  }
+}
+
+@include for-tablets {
+  html {
+    font-size: 0.875rem;
+  }
+}
+
+@include for-desktop {
+  html {
+    font-size: 1rem;
+  }
 }
 </style>

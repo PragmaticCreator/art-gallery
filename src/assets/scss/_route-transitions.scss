@@ -1,0 +1,31 @@
+.slide {
+  // Duration of entering start and end states.
+  &-enter-active {
+    transition-delay: 800ms;
+    transition: opacity 1s, transform 1s ease-in-out;
+  }
+  // Duration of leaving start and end states.
+  &-leave-active {
+    transition: opacity 1s ease-in-out, transform 800ms ease-in-out;
+  }
+  // Start of entered state
+  &-enter {
+    transform: translateX(-2em);
+    opacity: 0;
+  }
+  // End of entered state
+  &-enter-to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  // Start of leaving state
+  &-leave {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  // End of leaving state
+  &-leave-to {
+    transform: translateX(5em);
+    opacity: 0;
+  }
+}

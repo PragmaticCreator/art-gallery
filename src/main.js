@@ -1,9 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
-import router from './router';
-import VueResource from 'vue-resource';
-
-Vue.use(VueResource);
+import router from './router'; 
 
 // Establis a connection to the wordpress REST API
 // Vue.http.options.root = 'http://localhost:8888/headlessblog/wp-json';
