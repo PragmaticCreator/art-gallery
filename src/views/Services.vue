@@ -69,7 +69,7 @@ export default {};
     border-radius: 5px;
     object-fit: fill;
     width: 100%;
-    height: calc(380px - (380px - width));
+    height: calc(350px - (350px - width));
     max-height: 400px;
     max-width: 350px;
   }
