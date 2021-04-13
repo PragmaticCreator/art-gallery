@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class="about">
-      <img class="about__avatar" src="@/assets/images/avatar.jpg" alt="avatar">
+      <img class="about__avatar" src="@/assets/images/services/avatar.jpg" alt="avatar">
       <p class="about__content">
         <strong>Aaron's galerie</strong> is an independently owned art studio based in goa, india, focused on user-driven outcomes. 
         <br>I appreciate all kinds of art. This includes music, drawings, coding and even boxing.
@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-  font-family: 'Montserrat';
+  font-family: $fontAccent;
   display: flex ;
   flex-direction: column;
   align-items: center;

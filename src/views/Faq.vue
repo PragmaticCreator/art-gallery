@@ -130,6 +130,7 @@ export default {};
     }
 
     p {
+      background-color: $primaryColor;
       position: relative;
       display: flex;
       align-items: center;

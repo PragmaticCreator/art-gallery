@@ -1,11 +1,13 @@
 <template>
-  <div id="app">
+  <div id="app" class="app__svg">
     <!-- Website title -->
     <Header :isMobile="isMobile" />
+
     <!-- Desktop View -->
     <Dashboard v-if="!isMobile" />
     <!-- Mobile View -->
     <MobileView v-else />
+
     <!-- Footer -->
     <Footer />
   </div>
@@ -71,6 +73,10 @@ html {
   background-color: $primaryColor;
   color: $fontColor;
   overflow: hidden;
+}
+
+.app__svg {
+  background: url('./assets/polka-dots.svg');
 }
 
 @include for-phones {

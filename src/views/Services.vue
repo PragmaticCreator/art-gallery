@@ -8,12 +8,15 @@
       </p>
       <img
         class="services__js-right"
-        src="@/assets/images/noMasks.jpg"
+        src="@/assets/images/services/noMasks.jpg"
         alt="Tailored artwork"
       />
 
       <!-- Service B -->
-      <img src="@/assets/images/aaronChristopher.jpg" alt="Art by Aaron Christopher" />
+      <img
+        src="@/assets/images/services/aaronChristopher.jpg"
+        alt="Art by Aaron Christopher"
+      />
       <p>
         Production of art for private homes as art breathes life into a home.
         Helping clients surround themselves with art they can relate to.
@@ -26,12 +29,12 @@
       </p>
       <img
         class="services__js-right"
-        src="@/assets/images/ameliaBrown.jpg"
+        src="@/assets/images/services/ameliaBrown.jpg"
         alt="Art by Amelia Brown"
       />
 
       <!-- Service D -->
-      <img src="@/assets/images/artExhibition.jpg" alt="Photo by Dannie Jing" />
+      <img src="@/assets/images/services/artExhibition.jpg" alt="Photo by Dannie Jing" />
       <p>
         Exhibition opportunities for upcomming aspiring artists to showcase
         their creativity and talent.
@@ -48,7 +51,7 @@ export default {};
 .services {
   font-family: $fontAccent;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   margin: 0 50px;
   row-gap: 50px;
   column-gap: 30px;
@@ -65,9 +68,10 @@ export default {};
   img {
     border-radius: 5px;
     object-fit: fill;
-    height: 380px;
     width: 100%;
-    max-width: 280px;
+    height: calc(380px - (380px - width));
+    max-height: 400px;
+    max-width: 350px;
   }
 }
 </style>

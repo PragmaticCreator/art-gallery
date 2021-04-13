@@ -36,7 +36,8 @@ export default {
 
 <style lang="scss" scoped>
 .post {
-  font-family: 'Montserrat';
+  font-family: $fontAccent;
+  font-weight: 500;
 
   &__title {
     text-align: center;
@@ -47,6 +48,11 @@ export default {
   }
 
   &__content {
+    background-color: $primaryColor;
+    border-radius: 15px;
+    box-shadow: 0px 15px 15px 0 rgb(0, 0, 0, 0.1),
+      0px 4px 4px 0 rgb(0, 0, 0, 0.15);
+    padding-top: 50px;
     img {
       object-fit: fill;
       height: 400px;
@@ -78,7 +84,12 @@ export default {
         font-size: 1rem;
       }
 
-      h1,h2,h3,h4,h5,h6 {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
         margin: 20px 0;
       }
 
@@ -106,6 +117,11 @@ export default {
         object-fit: fill;
         margin-bottom: 30px;
         border-radius: 5px;
+      }
+
+      blockquote {
+        font-weight: 600;
+        font-style: italic;
       }
     }
   }

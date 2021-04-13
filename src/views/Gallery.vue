@@ -9,7 +9,7 @@
           @click="selectedImage = null"
         >
           <img
-            :src="require(`@/assets/drawings/${selectedImage}.jpg`)"
+            :src="require(`@/assets/images/drawings/${selectedImage}.jpg`)"
             :alt="selectedImage"
             @click="selectedImage = null"
           />
@@ -24,7 +24,7 @@
           :key="index"
         >
           <img
-            :src="require(`@/assets/drawings/${image.imageName}.jpg`)"
+            :src="require(`@/assets/images/drawings/${image.imageName}.jpg`)"
             :alt="image.artist"
             @click="zoomImage(image.imageName)"
           />
@@ -126,7 +126,10 @@ export default {
         max-width: 280px;
         object-fit: fill;
 
-        border: 2px solid $borderColor;
+        box-shadow: 0 20px 15px 0 rgb(0, 0, 0, 0.1),
+          0 4px 4px 0 rgb(0, 0, 0, 0.15);
+
+        border: 1px solid $borderColor;
         border-radius: 8px;
         margin-bottom: 10px;
         transition: transform 300ms ease-in-out;
