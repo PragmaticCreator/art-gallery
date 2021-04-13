@@ -33,6 +33,7 @@ export default {
     };
   },
   created() {
+    this.onResize();
     window.addEventListener('resize', this.onResize);
   },
   destroyed() {
