@@ -18,10 +18,10 @@ export default {};
 .index {
   height: 100vh;
   &__hero {
-    margin-top: -2em; // This is because dashboard has a m-top of 2em.
     object-fit: contain;
     height: 100vh;
     width: 80vw;
+    filter: drop-shadow(30px 15px 4px $tertiaryColor);
   }
 }
 

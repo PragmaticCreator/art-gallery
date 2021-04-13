@@ -33,13 +33,14 @@ export default {
   &__content {
     margin-top: 2em;
     padding: 50px;
+    padding-top: 0;
   }
 
   &__nav {
     position: fixed;
     // Rounded 80px
     bottom: 10vh;
-    // Rounded 50px 
+    // Rounded 50px
     right: 3.5vw;
   }
 }
