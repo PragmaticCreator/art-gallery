@@ -31,7 +31,7 @@
       <article>
         <div><span>Q.</span> Can we follow the gallery on social media?</div>
         <p>
-          <span>A.</span> yes, you can follow the it on instagram, pinterest and
+          <span>A.</span> yes, you can follow it on instagram, pinterest and
           youtube.
         </p>
       </article>
@@ -75,7 +75,7 @@
         </div>
         <p>
           <span>A.</span> The core motive of aaron's galerie is to support and
-          promote young emerging artist. Even if i don't sell your work, full
+          promote young emerging artists. Even if i don't sell your work, full
           guidance will be provided in case of any querries and you shall be
           informed accordingly.
         </p>
