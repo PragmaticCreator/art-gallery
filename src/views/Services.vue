@@ -57,7 +57,7 @@ export default {};
   font-family: $fontAccent;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 50px;
+  margin: 0 5vw;
   row-gap: 50px;
   column-gap: 30px;
 
