@@ -24,6 +24,7 @@
           :key="index"
         >
           <img
+            loading="lazy"
             :src="require(`@/assets/images/drawings/${image.imageName}.jpg`)"
             :alt="image.artist"
             @click="zoomImage(image.imageName)"

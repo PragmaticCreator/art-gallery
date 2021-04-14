@@ -2,6 +2,7 @@
   <main>
     <section class="index">
       <img
+        loading="lazy"
         class="index__hero"
         src="@/assets/images/drawings/heroImg.png"
         alt="Character art"
@@ -11,7 +12,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'Home',
+};
 </script>
 
 <style lang="scss" scoped>

@@ -7,6 +7,7 @@
         their specific needs.
       </p>
       <img
+        loading="lazy"
         class="services__js-right"
         src="@/assets/images/services/noMasks.jpg"
         alt="Tailored artwork"
@@ -14,6 +15,7 @@
 
       <!-- Service B -->
       <img
+        loading="lazy"
         src="@/assets/images/services/aaronChristopher.jpg"
         alt="Art by Aaron Christopher"
       />
@@ -28,13 +30,18 @@
         their creativity.
       </p>
       <img
+        loading="lazy"
         class="services__js-right"
         src="@/assets/images/services/ameliaBrown.jpg"
         alt="Art by Amelia Brown"
       />
 
       <!-- Service D -->
-      <img src="@/assets/images/services/artExhibition.jpg" alt="Photo by Dannie Jing" />
+      <img
+        loading="lazy"
+        src="@/assets/images/services/artExhibition.jpg"
+        alt="Photo by Dannie Jing"
+      />
       <p>
         Exhibition opportunities for upcomming aspiring artists to showcase
         their creativity and talent.
