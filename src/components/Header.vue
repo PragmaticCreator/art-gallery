@@ -50,7 +50,7 @@ export default {
   }
 
   &__menu {
-    font-size: 0.875rem;
+    font-size: 1rem;
     padding: 3px 12px;
 
     color: $primaryColor;
@@ -107,7 +107,7 @@ export default {
 
 @include for-phones {
     .header {
-      padding: 5px 10px;
+      padding: 10px 10px;
     }
   }
 </style>
