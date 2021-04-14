@@ -8,7 +8,6 @@
       </p>
       <img
         loading="lazy"
-        class="services__js-right"
         src="@/assets/images/services/noMasks.jpg"
         alt="Tailored artwork"
       />
@@ -31,7 +30,6 @@
       </p>
       <img
         loading="lazy"
-        class="services__js-right"
         src="@/assets/images/services/ameliaBrown.jpg"
         alt="Art by Amelia Brown"
       />
@@ -63,16 +61,13 @@ export default {};
   row-gap: 50px;
   column-gap: 30px;
 
-  &__js-right {
-    justify-self: right;
-  }
-
   p {
     font-size: 1.75rem;
     font-weight: 500;
   }
 
   img {
+    justify-self: center;
     border-radius: 5px;
     object-fit: fill;
     width: 100%;

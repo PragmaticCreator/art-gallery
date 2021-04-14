@@ -106,8 +106,8 @@ export default {
 }
 
 @include for-phones {
-    .header {
-      padding: 10px 10px;
-    }
+  .header {
+    padding: 10px 10px;
   }
+}
 </style>
